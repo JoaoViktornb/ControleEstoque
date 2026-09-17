@@ -41,7 +41,10 @@ public class Produto {
 
     //Metodo para mostrar os dados do produto
     public void exibirDetalhes(){
-        System.out.println("Quantidade: " + this.quantidade + " | Produto: " + this.nome + " | Preço: R$ " + this.preco);
+        double valorTotalDoItem = this.preco * this.quantidade;
+
+        System.out.printf("Qtd: %d | Produto: %s | Preço Un: R$ %.2f | Total do Item: R$ %.2f\n",
+                 this.quantidade, this.nome, this.preco, valorTotalDoItem);
     }
 
 }

@@ -64,7 +64,7 @@ public class Main {
                         System.out.println("---------------------------");
                         System.out.printf("VALOR TOTAL EM ESTOQUE: R$ %.2f\n", valorTotalDoEstoque);
                     }
-                     //adicionar para saber quanto tem de acda produto n so no geral
+
                     break;
 
                 case 3:
