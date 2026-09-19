@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 public class Main {
 
-    public static void main(String[]args) {
+    static void main() {
         Scanner sc = new Scanner(System.in);
 
         //lista vazia para guardar os produtos
         ArrayList<Produto> estoque = new ArrayList<>();
-        int opcao = 0;
+        int opcao;
 
         do {
             System.out.println("\n--- CONTROLE DE ESTOQUE ---");
@@ -25,7 +25,7 @@ public class Main {
                     System.out.println("\n--- NOVO PRODUTO ---");
 
                     System.out.print("Digite o nome do produto: ");
-                    String nome = sc.nextLine(); // Aqui lê o texto normalmente, pois o buffer já foi limpo lá em cima
+                    String nome = sc.nextLine(); // Aqui lê o texto normalmente, pois o "buffer" já foi limpo lá em cima
 
                     System.out.print("Digite o preço (ex: 45,90): ");
                     double preco = sc.nextDouble();
@@ -54,7 +54,7 @@ public class Main {
                     } else {
                         double valorTotalDoEstoque = 0;
 
-                        // passa pela lista pra mostrar os detalhes
+                        // passa pela lista para mostrar os detalhes
                         for (Produto p : estoque) {
 
                             p.exibirDetalhes();

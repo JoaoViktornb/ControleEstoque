@@ -44,7 +44,7 @@ public class Produto {
         double valorTotalDoItem = this.preco * this.quantidade;
 
         System.out.printf("Qtd: %d | Produto: %s | Preço Un: R$ %.2f | Total do Item: R$ %.2f\n",
-                 this.quantidade, this.nome, this.preco, valorTotalDoItem);
+                this.quantidade, this.nome, this.preco, valorTotalDoItem);
     }
 
 }
